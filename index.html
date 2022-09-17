@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>Instagram</title>
 </head>
 
@@ -17,19 +18,26 @@
             <div class="group">
                 <img src="img/instagram-logo.png" alt="instagram logo" class="instagram-logo">
                 <div class="instagram-login">
-                    <input class="input-login" type="email" name="" id="">
-                    <input class="input-login" type="password" name="" id="">
-                    <button class="login-button">Entrar</button>
-                    <p>Ou</p>
+                    <input  class="input-login" type="email" name="" id="">
+                    <div class="input-password">
+                        <input onblur="showButtonBorderBlur()" onfocus="showButtonBorderFocus()" class="input-login" type="password" name="" id="password">
+                       <div class="show-password" id="show-button">
+                        <a  onclick="showPassword()" href="#"><p id="show-mensage" class="show-password-button">Mostrar</p></a>
+                       </div>
+                    </div>
+        
+                    <a href="" class="login-button"><p>Entrar</p></a>
+                    <div class="or-line"></div>
+                    <p class="or-group">OU</p>
                     <div class="alternative-login">
                         <a class="facebook-button" href="#"><img src="img/Facebook_logo_button.png" alt=""></a>
-                        <p class="facebook-button">Entrar com o Facebook</p>
+                        <a class="facebook-button" href="#" ><p >Entrar com o Facebook</p></a>
                     </div>
-                    <span>Esqueceu a senha?</span>
+                    <a href="" class="forget-password">Esqueceu a senha?</a>
                 </div>
             </div>
             <div class="group">
-                <p>Não tem uma conta?<span class="blue-font">Cadastre-se</span></p>
+                <p>Não tem uma conta? <a href="#" class="blue-font">Cadastre-se</a></p>
             </div>
             <div class="app-download">
                 <p class="obter-app">Obtenha o aplicativo.</p>
@@ -40,6 +48,7 @@
 
             </div>
         </div>
+   
     </div>
 
 </body>
