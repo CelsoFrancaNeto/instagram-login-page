@@ -34,6 +34,8 @@ function showButtonBorderBlur() {
     if (passwordInput.value == "") {
         showPasswordButton.style.display = "none";
         passwordInput.style.borderRight = "1px solid #dbdbdb";
+        passwordInput.style.borderTopRightRadius = "4px";
+        passwordInput.style.borderBottomRightRadius = "4px";
     }
 
 }
