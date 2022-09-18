@@ -3,6 +3,8 @@ function showButtonPassword() {
     var passwordInput = document.getElementById("password");
     showPasswordButton.style.display = "flex";
     passwordInput.style.borderRight = "none";
+    passwordInput.style.borderTopRightRadius = "0";
+    passwordInput.style.borderBottomRightRadius = "0";
 
 }
 function showPassword() {
