@@ -18,20 +18,29 @@
             <div class="group">
                 <img src="img/instagram-logo.png" alt="instagram logo" class="instagram-logo">
                 <div class="instagram-login">
-                    <input placeholder="Telefone, nome de usuário ou email" class="input-login" type="email" name="" id="">
+                    <input placeholder="Telefone, nome de usuário ou email" class="input-login" type="email" name=""
+                        id="">
                     <div class="input-password">
-                        <input onblur="showButtonBorderBlur()" onfocus="showButtonBorderFocus()"  placeholder="Senha" class="input-login" type="password" tex name="" id="password">
-                       <div class="show-password" id="show-button">
-                        <a  onclick="showPassword()" href="#"><p id="show-mensage" class="show-password-button">Mostrar</p></a>
-                       </div>
+                        <input class="input-login" type="password" tex name="" id="password"
+                            oninput="showButtonPassword()" onblur="showButtonBorderBlur()"
+                            onfocus="showButtonBorderFocus()" placeholder="Senha">
+                        <div class="show-password" id="show-button">
+                            <a onclick="showPassword()" href="#">
+                                <p id="show-mensage" class="show-password-button">Mostrar</p>
+                            </a>
+                        </div>
                     </div>
-        
-                    <a href="" class="login-button"><p>Entrar</p></a>
+
+                    <a href="" class="login-button">
+                        <p>Entrar</p>
+                    </a>
                     <div class="or-line"></div>
                     <p class="or-group">OU</p>
                     <div class="alternative-login">
                         <a class="facebook-button" href="#"><img src="img/Facebook_logo_button.png" alt=""></a>
-                        <a class="facebook-button" href="#" ><p >Entrar com o Facebook</p></a>
+                        <a class="facebook-button" href="#">
+                            <p>Entrar com o Facebook</p>
+                        </a>
                     </div>
                     <a href="" class="forget-password">Esqueceu a senha?</a>
                 </div>
@@ -42,13 +51,13 @@
             <div class="app-download">
                 <p class="obter-app">Obtenha o aplicativo.</p>
                 <div class="download">
-                    <img src="img/apple-button.png" alt="" class="app-store">
-                    <img src="img/googleplay-button.png" alt="" class="googleplay">
+                   <a href="#" class="store-button"><img src="img/apple-button.png" alt=""></a> 
+                   <a href="#" class="store-button"><img src="img/googleplay-button.png" alt="" ></a> 
                 </div>
 
             </div>
         </div>
-   
+
     </div>
 
 </body>

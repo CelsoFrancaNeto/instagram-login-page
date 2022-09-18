@@ -121,7 +121,6 @@ body {
     height: 2.5rem;
     align-items: center;
     text-align: left;
-    border-right: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -134,7 +133,7 @@ body {
 }
 
 .show-password {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 2.5rem;
@@ -146,7 +145,6 @@ body {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     margin: 0 0 1em;
-    ;
 }
 
 .show-password a {
@@ -159,11 +157,12 @@ body {
     margin: 1.5em;
     color: #808080;
 }
+
 .or-line {
     margin: solid;
 }
 
-.forget-password{ 
+.forget-password {
     color: #808080;
     font-size: small;
 }
@@ -190,11 +189,21 @@ body {
 .app-download img {
     height: 3rem;
 }
+
 .download {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+
+.store-button:nth-child(1) {
+    margin-right: 0.5rem;
+}
+
+.store-button:nth-child(2) {
+    margin-left: 0.5rem;
+}
+
 
 .facebook-button {
     color: #385185;
